@@ -1,0 +1,19 @@
+skey.hcqt.VQT.harmonics = [1]
+skey.hcqt.VQT.fmin = 27.5
+skey.hcqt.VQT.n_bins = 99
+skey.hcqt.VQT.bins_per_octave = 12
+
+training_utils.skey.Stone.out_channels = [2, 3, 40, 40, 30, 10, 3]
+training_utils.skey.Stone.kernels = [7, 7, 7, 7, 7, 5, 5]
+training_utils.skey.Stone.temperature = 1
+training_utils.skey.Stone.n_bins = 84
+
+training_utils.dataloader.get_datasets.dataset_type_train = "selfsupervised"
+training_utils.dataloader.get_datasets.dataset_type_test = "supervised"
+training_utils.dataloader.get_datasets.sr = 22050
+training_utils.dataloader.get_datasets.duration = 10
+training_utils.dataloader.get_datasets.batch_size = 16
+training_utils.dataloader.get_datasets.train_txt_path = "datasets/fma/data/split/train.txt"
+training_utils.dataloader.get_datasets.train_audio_dir = "datasets/fma/data/train"
+training_utils.dataloader.get_datasets.test_txt_path = "datasets/fma/data/split/val.txt"
+training_utils.dataloader.get_datasets.test_audio_dir = "datasets/fma/data/val"
