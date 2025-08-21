@@ -15,7 +15,7 @@ This project investigates the problem of musical key estimation for short audio 
 2. Install poetry
 3. Add necessary packages in poetry
 4. Run evaluation script
-5. Check results in 'eval/metrics.csv' and predictions in '<save_dir>/models/<train_type>/<circle_type>/<exp_name>/<model_name>/predictions.json', for example.
+5. Check results in 'eval/metrics.csv' and predictions in '<save_dir>/models/<train_type>/<circle_type>/<exp_name>/<model_name>/predictions.json'.
 
 Notes:
 - To change the model being evaluated, replace DEFAULT_CHECKPOINT_PATH in the "Load Model" section of eval.py.
