@@ -1,0 +1,65 @@
+[tool.poetry]
+name = "skey-minimal"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{ include = "skey" }]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.12"
+tqdm = ">=4.67.1,<5.0.0"
+numpy = ">=1.22,<1.25"
+soundfile = ">=0.13.1,<0.14.0"
+einops = ">=0.8.1,<0.9.0"
+nnaudio = ">=0.3.3,<0.4.0"
+wandb = ">=0.20.1,<0.21.0"
+cython = ">=3.1.2,<4.0.0"
+madmom = { git = "https://github.com/CPJKU/madmom.git" }
+torchaudio = "^2.0.0"
+torch = "2.0.0"
+torchvision = "^0.15.0"
+pandas = "^2.3.0"
+scikit-learn = "^1.3.0"
+matplotlib = "^3.10.3"
+gin-config = "0.5.*"
+
+[tool.poetry.group.dev.dependencies]
+torchinfo = "1.7.*"
+GPUtil = "1.4.*"
+scipy = ">=1.13"
+openpyxl = "3.1.*"
+ipython = "8.12.*"
+ujson = "5.7.*"
+timm = "0.6.*"
+hvac = "1.1.*"
+pymysql = "1.0.*"
+dbutils = "3.0.*"
+audioread = "3.0.*"
+torchmetrics = ">=0.11.4,<0.13.0"
+weightwatcher = "0.7.*"
+Unidecode = "1.3.*"
+mypy = "*"
+black = "*"
+isort = "*"
+pytest-cov = "*"
+pytest-mock = "*"
+pytest-asyncio = "*"
+pytest = "*"
+flake8 = "*"
+pdbr = "*"
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+
+[tool.poetry.scripts]
+skey = "skey.cli:main"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+addopts = "--cov-report xml:coverage.xml --cov=. --junitxml=xunit.xml"
+junit_family = "xunit2"
