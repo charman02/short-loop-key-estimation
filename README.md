@@ -78,9 +78,9 @@ Notes:
        eprint = {1803.05337},
        url = {https://arxiv.org/abs/1803.05337},
      }
-     Peter Knees, Ángel Faraldo, Perfecto Herrera, Richard Vogl,
-                  Sebastian Böck, Florian Hörschläger, Mickael Le Goff: "Two data
-                  sets for tempo estimation and key detection in electronic dance
-                  music annotated from user corrections," Proc. of the 16th
-                  Conference of the International Society for Music Information
-                  Retrieval (ISMIR'15), Oct. 2015, Malaga, Spain.
+Peter Knees, Ángel Faraldo, Perfecto Herrera, Richard Vogl,
+   Sebastian Böck, Florian Hörschläger, Mickael Le Goff: "Two data
+   sets for tempo estimation and key detection in electronic dance
+   music annotated from user corrections," Proc. of the 16th
+   Conference of the International Society for Music Information
+   Retrieval (ISMIR'15), Oct. 2015, Malaga, Spain.
