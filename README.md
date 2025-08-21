@@ -21,9 +21,9 @@ Notes:
 - To change the model being evaluated, replace DEFAULT_CHECKPOINT_PATH in the "Load Model" section of eval.py.
 
 ## Datasets
-FMAKv2 (fma_medium): https://github.com/stellaywong/fma_keys
-GiantSteps: https://github.com/GiantSteps/giantsteps-key-dataset
-GTZAN: https://www.kaggle.com/datasets/andradaolteanu/gtzan-dataset-music-genre-classification/data
+- FMAKv2 (fma_medium): https://github.com/stellaywong/fma_keys
+- GiantSteps: https://github.com/GiantSteps/giantsteps-key-dataset
+- GTZAN: https://www.kaggle.com/datasets/andradaolteanu/gtzan-dataset-music-genre-classification/data
 
 ## Training
 ### Example Usage
