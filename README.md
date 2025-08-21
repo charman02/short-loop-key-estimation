@@ -20,6 +20,11 @@ This project investigates the problem of musical key estimation for short audio 
 Notes:
 - To change the model being evaluated, replace DEFAULT_CHECKPOINT_PATH in the "Load Model" section of eval.py.
 
+## Datasets
+FMAKv2 (fma_medium): https://github.com/stellaywong/fma_keys
+GiantSteps: https://github.com/GiantSteps/giantsteps-key-dataset
+GTZAN: https://www.kaggle.com/datasets/andradaolteanu/gtzan-dataset-music-genre-classification/data
+
 ## Training
 ### Example Usage
      poetry run python -m main -n basic -tt ks_mode -s skey -e 20 -ts 20 -vs 10 -g training_utils/config/skey.gin
@@ -37,7 +42,7 @@ Notes:
 Notes:
 - Checkpoints are saved in '<save_dir>/models/<train_type>/<circle_type>/<exp_name>/<model_name>/'.
 
-# References
+# Acknowledgments
      @article{kong2024stone,
        title={STONE: Self-supervised Tonality Estimator},
        author={Kong, Yuexuan and Lostanlen, Vincent and Meseguer-Brocal, Gabriel and Wong, Stella and Lagrange, Mathieu and Hennequin, Romain},
@@ -51,3 +56,31 @@ Notes:
        year={2025},
        pages={1-5},
        doi={10.1109/ICASSP49660.2025.10890222}}
+     @inproceedings{fma_dataset,
+       title = {{FMA}: A Dataset for Music Analysis},
+       author = {Defferrard, Micha\"el and Benzi, Kirell and Vandergheynst, Pierre and Bresson, Xavier},
+       booktitle = {18th International Society for Music Information Retrieval Conference (ISMIR)},
+       year = {2017},
+       archiveprefix = {arXiv},
+       eprint = {1612.01840},
+       url = {https://arxiv.org/abs/1612.01840},
+     }
+     @inproceedings{fma_challenge,
+       title = {Learning to Recognize Musical Genre from Audio},
+       subtitle = {Challenge Overview},
+       author = {Defferrard, Micha\"el and Mohanty, Sharada P. and Carroll, Sean F. and Salath\'e, Marcel},
+       booktitle = {The 2018 Web Conference Companion},
+       year = {2018},
+       publisher = {ACM Press},
+       isbn = {9781450356404},
+       doi = {10.1145/3184558.3192310},
+       archiveprefix = {arXiv},
+       eprint = {1803.05337},
+       url = {https://arxiv.org/abs/1803.05337},
+     }
+     Peter Knees, Ángel Faraldo, Perfecto Herrera, Richard Vogl,
+                  Sebastian Böck, Florian Hörschläger, Mickael Le Goff: "Two data
+                  sets for tempo estimation and key detection in electronic dance
+                  music annotated from user corrections," Proc. of the 16th
+                  Conference of the International Society for Music Information
+                  Retrieval (ISMIR'15), Oct. 2015, Malaga, Spain.
